@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.controller.Controller">
+    <children>
+        <TableView fx:id="tableView" layoutX="69.0" layoutY="82.0" prefHeight="249.0" prefWidth="469.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="66.0" text="ID"/>
+                <TableColumn fx:id="numberOfContract" prefWidth="124.0" text="Номер договора"/>
+                <TableColumn fx:id="agreementDate" prefWidth="139.0" text="Дата соглашения"/>
+                <TableColumn fx:id="updatedAgreementDate" minWidth="0.0" prefWidth="139.0" text="Дата обновления"/>
+            </columns>
+        </TableView>
+        <CheckBox fx:id="checkBox" onMouseClicked="#clickCheckBox" layoutX="69.0" layoutY="45.0" mnemonicParsing="false" text="Показать актуальные"/>
+    </children>
+</AnchorPane>
