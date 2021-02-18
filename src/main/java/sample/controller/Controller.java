@@ -80,7 +80,7 @@ public class Controller {
             List<ContractDTO> list = data;
             data = FXCollections.observableArrayList();
             for (ContractDTO contract : list) {
-                if (DAYS.between(contract.getUpdatedAgreementDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate(), LocalDate.now()) > 60) {
+                if (DAYS.between(contract.getUpdatedAgreementDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate(), LocalDate.now()) < 60) {
                     data.add(contract);
                 }
             }
