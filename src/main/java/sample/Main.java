@@ -12,7 +12,6 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception{
         FXMLLoader loader = new FXMLLoader();
         Parent root = (Parent) loader.load(getClass().getResourceAsStream("/views/main.fxml"));
-        stage.setTitle("Users List");
         stage.setScene(new Scene(root));
         stage.show();
     }
